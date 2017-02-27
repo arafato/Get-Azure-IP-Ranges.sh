@@ -2,7 +2,17 @@
 Little bash script for automatically fetching the most recent Azure IP Ranges.
 Great for automating things...
 
+# Usage
 ```
 $ ./get-ip-ranges
 ```
-will save the current list in the current directory under `azure_ip_ranges.xml`
+Will output the current Azure IP ranges to stdout
+```
+$ ./get-ip-ranges > az-ip-ranges.xml
+```
+Lets you redirect output to a file.
+```
+$ ./get-ip-ranges | vi -
+```
+Lets VIM read current Azure IP ranges from stdin.
+
