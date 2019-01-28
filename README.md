@@ -15,4 +15,7 @@ Lets you redirect output to a file.
 $ ./get-ip-ranges | vi -
 ```
 Lets VIM read current Azure IP ranges from stdin.
-
+```
+$ ./get-ip-ranges | xmlstarlet sel -t -v "//@Subnet"
+```
+Outputs just the Azure IP range using xmlstarlet.
