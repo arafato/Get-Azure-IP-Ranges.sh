@@ -4,18 +4,18 @@ Great for automating things...
 
 # Usage
 ```
-$ ./get-ip-ranges
+$ ./get-ip-ranges.sh
 ```
 Will output the current Azure IP ranges to stdout
 ```
-$ ./get-ip-ranges > az-ip-ranges.xml
+$ ./get-ip-ranges.sh > az-ip-ranges.xml
 ```
 Lets you redirect output to a file.
 ```
-$ ./get-ip-ranges | vi -
+$ ./get-ip-ranges.sh | vi -
 ```
 Lets VIM read current Azure IP ranges from stdin.
 ```
-$ ./get-ip-ranges | xmlstarlet sel -t -v "//@Subnet"
+$ ./get-ip-ranges.sh | xmlstarlet sel -t -v "//@Subnet"
 ```
 Outputs just the Azure IP range using xmlstarlet.
